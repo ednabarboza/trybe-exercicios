@@ -1,0 +1,91 @@
+Questão 1) Utilizando o terminal, aplique o comando de criação de diretórios que você aprendeu, crie um diretório chamado unix_tests e navegue até ele.
+
+edna@Edna-Ubuntu:~$ mkdir unix_tests
+edna@Edna-Ubuntu:~$ ls
+'Área de Trabalho'   frutasOrdenadas.txt   rep
+ arquivo.txt         frutas.txt            snap
+ cores.txt           Imagens               trybe-exercicios
+ countries.txt       Modelos               tudo.txt
+ Documentos          Música                unix_tests
+ Downloads           Público               Vídeos
+edna@Edna-Ubuntu:~$ cd unix_tests
+
+Questão 2) Crie um arquivo de texto com o nome trybe.txt .
+
+edna@Edna-Ubuntu:~/unix_tests$ touch trybe.txt 
+edna@Edna-Ubuntu:~/unix_tests$ ls
+trybe.txt
+
+Questão 3) Crie uma cópia do arquivo trybe.txt com nome trybe_backup.txt .
+
+edna@Edna-Ubuntu:~/unix_tests$ cp trybe.txt trybe_backup.txt
+edna@Edna-Ubuntu:~/unix_tests$ ls
+trybe_backup.txt  trybe.txt
+
+Questão 4) Renomeie o arquivo trybe.txt
+
+edna@Edna-Ubuntu:~/unix_tests$ mv trybe.txt trybe1.txt
+edna@Edna-Ubuntu:~/unix_tests$ ls
+trybe1.txt  trybe_backup.txt
+
+Questão 5) Dentro de unix_tests , crie um novo diretório chamado backup .
+edna@Edna-Ubuntu:~/unix_tests$ mkdir backup
+edna@Edna-Ubuntu:~/unix_tests$ ls
+backup  trybe1.txt  trybe_backup.txt
+
+Questão 6) Mova o arquivo trybe_backup.txt para o diretório backup .
+
+edna@Edna-Ubuntu:~/unix_tests$ mv trybe_backup.txt backup
+edna@Edna-Ubuntu:~/unix_tests$ ls
+backup  trybe1.txt
+edna@Edna-Ubuntu:~/unix_tests$ cd backup
+edna@Edna-Ubuntu:~/unix_tests/backup$ ls
+trybe_backup.txt
+edna@Edna-Ubuntu:~/unix_tests/backup$ cd ..
+
+Questão 7) Dentro de unix_tests , crie um novo diretório chamado backup2 .
+
+edna@Edna-Ubuntu:~/unix_tests$ mkdir backup2
+edna@Edna-Ubuntu:~/unix_tests$ ls
+
+Questão 8) Mova o arquivo trybe_backup.txt da pasta backup para a pasta backup2 .
+
+edna@Edna-Ubuntu:~/unix_tests$ mv backup/trybe_backup.txt backup2
+edna@Edna-Ubuntu:~/unix_tests$ ls
+backup  backup2  trybe1.txt
+edna@Edna-Ubuntu:~/unix_tests$ cd ^C
+edna@Edna-Ubuntu:~/unix_tests$ cd backup2
+edna@Edna-Ubuntu:~/unix_tests/backup2$ ls
+trybe_backup.txt
+edna@Edna-Ubuntu:~/unix_tests/backup2$ cd ..
+edna@Edna-Ubuntu:~/unix_tests$ ls
+backup  backup2  trybe1.txt
+
+Questão 9) Apague a pasta backup 
+
+edna@Edna-Ubuntu:~/unix_tests$ rm -rf backup
+edna@Edna-Ubuntu:~/unix_tests$ ls
+backup2  trybe1.txt
+
+Questão 10) Renomeie a pasta backup2 para backup 
+
+edna@Edna-Ubuntu:~/unix_tests$ mv backup2 backup
+edna@Edna-Ubuntu:~/unix_tests$ ls
+backup  trybe1.txt
+
+Questão 11) Veja qual o path completo do diretório atual e liste todos os arquivos dentro dele.
+
+edna@Edna-Ubuntu:~/unix_tests$ pwd
+/home/edna/unix_tests
+
+Questão 12) Apague o diretório backup .
+
+edna@Edna-Ubuntu:~/unix_tests$ rm -rf backup
+edna@Edna-Ubuntu:~/unix_tests$ ls
+trybe1.txt
+
+Questão 13) Limpe o terminal.
+
+edna@Edna-Ubuntu:~/unix_tests$ clear
+
+
